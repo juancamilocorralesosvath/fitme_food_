@@ -1,0 +1,90 @@
+html{
+    /* defines what 1rem is */
+    font-size: 62.5%; /* 1rem = 10px 10px/16px = 62.5% */
+}
+body{
+    padding: 0;
+    margin: 0;
+
+}
+.mexican-font{
+    font-family: 'pistol_grip_pumpregular';
+}
+.main{
+    background-color: rgba(255, 0, 0, 0.274);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/images/primary-bg.jpg);
+}
+.main-body{
+    background-color: rgba(0, 0, 255, 0.383);
+    width: 50%;
+    height: 100%;
+    background-image: url(../assets/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.upper-section{
+    display: flex;
+}
+.upper-section-left{
+    width: 50%;
+}
+.upper-section-left-img{
+  /*   display: flex;
+    justify-content: left; */
+    width: 45em;
+    height: 40em;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.right-img{
+    width: 20em;
+    height: 17em;
+    padding-right: 20px;
+}
+.middle-section{
+    display: flex;
+    justify-content: center;
+}
+.middle-section h1{
+    font-size: 10em;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px 10px 10px;
+}
+/* con esto tenemos que ser muy atentos, es lo mas importante
+   habiendo dicho eso, hay que concentrarse en los dispositivos moviles, es 
+   donde mas probabilidad hay que vean el menu. 
+*/
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .upper-section-left-img{
+          width: 10em;
+          height: 10em;
+      }
+      .right-img{
+        width: 4em;
+        height: 4em;
+        padding-right: 8px;
+    }
+    .middle-section h1{
+        font-size: 3.5em;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
+    .upper-section-left-img{
+          width: 25em;
+          height: 25em;
+      }
+      .right-img{
+        width: 10em;
+        height: 5em;
+    }
+}
