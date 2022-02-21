@@ -7,13 +7,15 @@ body{
     margin: 0;
 
 }
-.mexican-font{
-    font-family: 'pistol_grip_pumpregular';
+
+.no-space{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .main{
     background-color: rgba(255, 0, 0, 0.274);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +53,9 @@ body{
 }
 .middle-section{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .middle-section h1{
     font-size: 10em;
@@ -59,6 +63,61 @@ body{
     color: white;
     background-color: black;
     padding: 10px 10px 10px;
+    margin-bottom: 0px;
+}
+.base-selection{
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    padding: 10px 10px 10px;
+}
+.go-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 0px;
+}
+.go-right h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+}
+.salads{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.salad h1, h2, p{
+    text-align: center;
+    color: white;
+}
+.salad h2{
+    font-family: 'Shizuru', cursive;
+    text-decoration: underline;
+}
+.salad p{
+    padding: 20px;
+}
+.salad-image{
+    width: 80em;
+    height: 70em;
+}
+.mexican-font{
+    font-family: 'pistol_grip_pumpregular';
+    font-size: 10em;
+}
+.olivetti-font{
+    font-family: 'zai_olivetti-underwood_studRg';
+}
+.hawaii-font{
+    font-family: 'hawaiian_dreams_personal_usRg';
+    font-weight: 50;
+}
+.italian-font{
+    font-family: 'italiannoregular';
 }
 /* con esto tenemos que ser muy atentos, es lo mas importante
    habiendo dicho eso, hay que concentrarse en los dispositivos moviles, es 
@@ -73,9 +132,36 @@ body{
         width: 4em;
         height: 4em;
         padding-right: 8px;
-    }
+    } 
+    
     .middle-section h1{
+        font-size: 3em;
+    }
+    .go-right h3{
+        font-size: .9em;
+        padding-right: 10px;
+    }
+    .base-selection{
+        font-size: 1em;
+    }
+    .salad-image{
+        width: 15em;
+        height: 15em;
+    }
+    .mexican-font{
         font-size: 3.5em;
+    }
+    .olivetti-font{
+        font-size: 2em;
+    }
+    .hawaii-font{
+        font-size: 3.5em;
+    }
+    .italian-font{
+        font-size: 2.9em;
+    }
+    .salad h2{
+        font-size: 2.5em;
     }
 }
 @media only screen and (min-width: 426px) and (max-width: 1024px) {
@@ -86,5 +172,15 @@ body{
       .right-img{
         width: 10em;
         height: 5em;
+    }
+    .middle-section h1{
+        font-size: 6em;
+    }
+    .base-selection{
+        font-size: 3em;
+    }
+    .salad-image{
+        width: 30em;
+        height: 30em;
     }
 }
