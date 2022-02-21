@@ -90,6 +90,12 @@ body{
     justify-content: center;
     align-items: center;
 }
+.salad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .salad h1, h2, p{
     text-align: center;
     color: white;
@@ -100,6 +106,7 @@ body{
 }
 .salad p{
     padding: 20px;
+    margin-bottom: 40px;
 }
 .salad-image{
     width: 80em;

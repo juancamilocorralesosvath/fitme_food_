@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="../style/italian-style.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <!-- aos -->
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
     <title>Fit me!</title>
 </head>
 <body>
@@ -55,17 +57,17 @@
                 <!-- mexicana -->
                 <main class="salad" >
                     <img class="salad-image" src="../assets/images/salad-1.png" alt="">
-                    <h1 class="mexican-font no-space" >ENSALADA MEXICANA</h1>
+                    <h1 data-aos="fade-up" data-aos-duration="2000" class="mexican-font no-space" >ENSALADA MEXICANA</h1>
                     <h2 class="no-space" >$10.000</h2>
-                    <p class="no-space" >Mix de lechugas, pollo asado, maduro calado, queso mozzarella, pico de gallo, nachos crocantes y deliciosa salsa de maíz dulce.</p>
+                    <p data-aos="fade-left" data-aos-duration="2000" class="no-space" >Mix de lechugas, pollo asado, maduro calado, queso mozzarella, pico de gallo, nachos crocantes y deliciosa salsa de maíz dulce.</p>
                 </main>
 
                 <!-- cesar: vamos con Olivetti -->
                 <main class="salad" >
                     <img class="salad-image" src="../assets/images/salad-2.png" alt="">
-                    <h1 class="mexican-font olivetti-font no-space" >ENSALADA CÉSAR</h1>
+                    <h1 data-aos="zoom-in" data-aos-duration="2000" class="mexican-font olivetti-font no-space" >ENSALADA CÉSAR</h1>
                     <h2 class="no-space" >$10.000</h2>
-                    <p class="no-space" >
+                    <p data-aos="zoom-in-up" data-aos-duration="2000" class="no-space" >
                         Mix de lechugas, pollo asado, queso mozzarella, crotones crocantes y salsa césar.
                     </p>
                 </main>
@@ -73,20 +75,24 @@
                 <!-- tropical: hawaiian dreams -->
                 <main class="salad" >
                     <img class="salad-image" src="../assets/images/salad-3.png" alt="">
-                    <h1 class="mexican-font hawaii-font no-space" >ENSALADA TROPICAL</h1>
+                    <h1 data-aos="zoom-in-down" data-aos-duration="2000" class="mexican-font hawaii-font no-space" >ENSALADA TROPICAL</h1>
                     <h2 class="no-space" >$10.000</h2>
-                    <p class="no-space" >Mix de lechugas, pollo asado, piña calada, queso mozzarella, maíz, frutos secos y deliciosa salsa de maracuyá.</p>
+                    <p data-aos="zoom-out" data-aos-duration="2000" class="no-space" >Mix de lechugas, pollo asado, piña calada, queso mozzarella, maíz, frutos secos y deliciosa salsa de maracuyá.</p>
                 </main>
 
                 <!-- italiana: Italianno Regular-->
                 <main class="salad" >
                     <img class="salad-image" src="../assets/images/salad-4.png" alt="">
-                    <h1 class="mexican-font italian-font no-space" >ENSALADA ITALIANA</h1>
+                    <h1 data-aos="zoom-in-right" data-aos-duration="2000" class="mexican-font italian-font no-space" >ENSALADA ITALIANA</h1>
                     <h2 class="no-space" >$10.000</h2>
-                    <p class="no-space" >Mix de lechugas, pollo asado, queso mozzarella, maíz, tomate, pasta pesto integral y salsa de queso azul.</p>
+                    <p data-aos="zoom-in-down" data-aos-duration="2000" class="no-space" >Mix de lechugas, pollo asado, queso mozzarella, maíz, tomate, pasta pesto integral y salsa de queso azul.</p>
                 </main>
             </section>
         </div>
     </section>
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
